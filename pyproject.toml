@@ -1,0 +1,23 @@
+[project]
+name = "weather"
+version = "0.1.0"
+description = "weather using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai-tools>=0.14.0",
+    "crewai[tools]>=0.80.0,<1.0.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+weather = "weather.main:run"
+run_crew = "weather.main:run"
+train = "weather.main:train"
+replay = "weather.main:replay"
+test = "weather.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

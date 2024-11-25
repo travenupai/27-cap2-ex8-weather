@@ -1,0 +1,8 @@
+# tasks.yaml
+weather_task:
+  description: >
+    Obtenha a temperatura atual da cidade especificada.
+    Cidade: {city}
+  expected_output: >
+    Uma string que indica a temperatura atual na cidade especificada.
+  agent: weather_agent
